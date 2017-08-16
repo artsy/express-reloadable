@@ -1,0 +1,22 @@
+{
+  "name": "@artsy/express-reloadable",
+  "version": "1.0.6",
+  "description": "Development tool that enables hot-swapping Express server code without a restart",
+  "keywords": [
+    "express",
+    "hot-swap",
+    "development tool"
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:artsy/express-reloadable.git",
+  "authors": [
+    "Artsy <https://artsy.net>",
+    "Christopher Pappas <damassi.pappas@gmail.com>",
+    "Eloy Durán <eloy.de.enige@gmail.com>"
+  ],
+  "homepage": "https://github.com/artsy/express-reloadable",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^1.7.0"
+  }
+}
