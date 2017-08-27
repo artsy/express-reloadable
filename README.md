@@ -1,4 +1,4 @@
-# express-reloadable
+# @artsy/express-reloadable
 
 When developing a Node app it's common to rely on tools like [`node-dev`](https://github.com/fgnass/node-dev) or [`nodemon`](https://github.com/remy/nodemon) to make the development process more rapid by automatically restarting the server instance on file-change. What `express-reloadable` does is listen for source-code changes within a subset of your app and, scanning Node's internal module cache, clears the `require` call if found. This tricks Node into thinking the module has not yet been loaded, effectively hot-swapping out your code without a full restart. Crazy-fast development speed!
 
@@ -47,6 +47,20 @@ if (isDevelopment) {
 app.listen(3000, () => {
   console.log(`Listening on port 3000`)
 })
+```
+
+**Troubleshooting**:
+
+> Help! I've mounted my app using reloadable but I'm not seeing any changes?
+
+For the utility to work you need to a) ensure that `NODE_ENV=development` (for safety) and b) the path to your app is absolute:
+
+```js
+// Incorrect
+app.use(reloadAndMount('./path/to/app'))
+
+// Correct :)
+app.use(reloadAndMount(path.resolve(__dirname, 'path/to/app')))
 ```
 
 **Thanks**:

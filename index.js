@@ -57,6 +57,8 @@ function createReloadable (app, require) {
         onReload(req, res, next)
       })
 
+      console.log(`(@artsy/express-reloadable) Mounting ${folderPath}`)
+
       return onReload
 
       // Node env not 'development', exit

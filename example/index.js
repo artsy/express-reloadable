@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const { createReloadable, isDevelopment } = require('../')
+const { createReloadable, isDevelopment } = require('@artsy/express-reloadable')
 
 const app = express()
 

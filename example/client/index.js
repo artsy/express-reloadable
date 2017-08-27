@@ -25,8 +25,7 @@ app.get('/', async (req, res, next) => {
       </html>
     `)
   } catch (error) {
-    throw error
-    console.log('Error fetching /api/users')
+    next(error)
   }
 })
 
