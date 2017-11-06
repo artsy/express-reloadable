@@ -1,3 +1,4 @@
+const path = require('path')
 const { NODE_ENV } = process.env
 const isDevelopment = !NODE_ENV || NODE_ENV === 'development'
 
@@ -5,21 +6,32 @@ function createReloadable (app, require) {
   return (folderPath, options = {}) => {
     if (isDevelopment) {
       const {
+        watchModules = [],
         mountPoint = '/'
       } = options
 
       // On browser page reload, re-require app files
       const onReload = (req, res, next) => require(folderPath)(req, res, next)
+      const rootPath = path.resolve(folderPath)
+
+      const watchPaths = watchModules
+        .map(module => path.dirname(require.resolve(module)))
+        .concat([rootPath])
 
       // Watch a subset of files for changes
-      const watcher = require('chokidar').watch(folderPath)
+      watchPaths.forEach(folder => {
+        const watcher = require('chokidar').watch(folder)
 
-      watcher.on('ready', () => {
-        watcher.on('all', () => {
-          Object.keys(require.cache).forEach(id => {
-            if (id.startsWith(folderPath)) {
-              delete require.cache[id]
-            }
+        watcher.on('ready', () => {
+          watcher.on('all', () => {
+            Object.keys(require.cache).forEach(id => {
+              if (id.startsWith(rootPath)) {
+                delete require.cache[id]
+              }
+              if (id.startsWith(folder)) {
+                delete require.cache[id]
+              }
+            })
           })
         })
       })
@@ -57,8 +69,7 @@ function createReloadable (app, require) {
         onReload(req, res, next)
       })
 
-      console.log(`(@artsy/express-reloadable) Mounting ${folderPath}`)
-
+      console.log(`(@artsy/express-reloadable) Mounting: \n${watchPaths.join('\n')}\n`)
       return onReload
 
       // Node env not 'development', exit
