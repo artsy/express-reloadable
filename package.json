@@ -1,6 +1,6 @@
 {
   "name": "@artsy/express-reloadable",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Development tool that enables hot-swapping Express server code without a restart",
   "keywords": [
     "express",
