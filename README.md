@@ -61,20 +61,6 @@ app.listen(3000, () => {
 })
 ```
 
-**Troubleshooting**:
-
-> Help! I've mounted my app using reloadable but I'm not seeing any changes?
-
-For the utility to work you need to a) ensure that `NODE_ENV=development` (for safety) and b) the path to your app is absolute:
-
-```js
-// Incorrect
-app.use(reloadAndMount('./path/to/app'))
-
-// Correct :)
-app.use(reloadAndMount(path.resolve(__dirname, 'path/to/app')))
-```
-
 **Thanks**:
 
 This package was heavily inspired by @glenjamin's [ultimate-hot-loading-example](https://github.com/glenjamin/ultimate-hot-reloading-example).
