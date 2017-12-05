@@ -8,7 +8,7 @@ When developing a Node app it's common to rely on tools like [`node-dev`](https:
 - `express-reloadable` is called with a path to an app, which it then mounts
 - When source-code within that folder / app changes an internal lookup is made to Node, scanning its `require` cache for the changed file
 - If found, it is cleared internally via `delete require.cache[id]`
-- When the browser is reloaded `express-reloadable` executes a callback that re-requires the code and changes are instantly available.
+- When a new request is made `express-reloadable` executes a callback that re-requires the code and changes are instantly available.
 
 **Installation**:
 
