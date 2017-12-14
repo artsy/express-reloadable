@@ -11,7 +11,17 @@ function createReloadable (app, require) {
       } = options
 
       // On browser page reload, re-require app files
-      const onReload = (req, res, next) => require(folderPath)(req, res, next)
+      const onReload = (req, res, next) => {
+        const module = require(folderPath)
+
+        // Check if ES6 default export
+        if (module.default) {
+          module.default(req, res, next)
+        } else {
+          module(req, res, next)
+        }
+      }
+
       const rootPath = path.resolve(folderPath)
 
       const watchPaths = watchModules
