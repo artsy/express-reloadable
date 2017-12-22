@@ -14,6 +14,6 @@
     "start": "NODE_ENV=development node index.js"
   },
   "devDependencies": {
-    "@artsy/express-reloadable": "^1.0.6"
+    "@artsy/express-reloadable": "^1.1.2"
   }
 }
