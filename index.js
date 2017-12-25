@@ -10,7 +10,7 @@ function createReloadable (app, require) {
         mountPoint = '/'
       } = options
 
-      // On browser page reload, re-require app files
+      // On new request re-require app files
       const onReload = (req, res, next) => {
         const module = require(folderPath)
 
@@ -33,6 +33,8 @@ function createReloadable (app, require) {
         const watcher = require('chokidar').watch(folder)
 
         watcher.on('ready', () => {
+          watcher.on('change', file => console.log(`[@artsy/express-reloadable] File ${file} has changed.`))
+
           watcher.on('all', () => {
             Object.keys(require.cache).forEach(id => {
               if (id.startsWith(rootPath)) {
@@ -79,13 +81,13 @@ function createReloadable (app, require) {
         onReload(req, res, next)
       })
 
-      console.log(`(@artsy/express-reloadable) Mounting: ${watchPaths.join(', ')}`)
+      console.log(`[@artsy/express-reloadable] Mounting: ${watchPaths.join(', ')}`)
       return onReload
 
       // Node env not 'development', exit
     } else {
       throw new Error(
-        '(lib/reloadable.js) NODE_ENV must be set to "development" to use ' +
+        '[lib/reloadable.js] NODE_ENV must be set to "development" to use ' +
         'reloadable.js'
       )
     }
