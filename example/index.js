@@ -9,12 +9,12 @@ if (isDevelopment) {
 
   // Note that if you need to mount an app at a particular root (`/api`), pass
   // in `mountPoint` as an option.
-  app.use('/api', mountAndReload('./api', {
+  app.use('/api', mountAndReload(path.resolve(__dirname, 'api'), {
     mountPoint: '/api'
   }))
 
   // Otherwise, just pass in the path to the express app and everything is taken care of
-  mountAndReload('./client')
+  mountAndReload(path.resolve(__dirname, 'client'))
 } else {
   app.use('/api', require('./api'))
   app.use(require('./client'))

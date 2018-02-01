@@ -32,10 +32,10 @@ if (isDevelopment) {
   const mountAndReload = createReloadable(app, require)
 
   // Pass in the path to an express sub-app and everything is taken care of
-  mountAndReload('./client')
+  mountAndReload(path.resolve(__dirname, './client'))
 
   // Full example:
-  app.use('/api', mountAndReload('./api'), {
+  app.use('/api', mountAndReload(path.resolve(__dirname, './api')), {
 
     // If you need to mount an app at a particular root (`/api`), pass in
     // `mountPoint` as an option.
@@ -59,6 +59,20 @@ if (isDevelopment) {
 app.listen(3000, () => {
   console.log(`Listening on port 3000`)
 })
+```
+
+**Troubleshooting**:
+
+> Help! I've mounted my app using reloadable but I'm not seeing any changes?
+
+For the utility to work you need to a) ensure that `NODE_ENV=development` (for safety) and b) the path to your app is absolute:
+
+```js
+// Incorrect
+app.use(reloadAndMount('./path/to/app'))
+
+// Correct :)
+app.use(reloadAndMount(path.resolve(__dirname, 'path/to/app')))
 ```
 
 **Thanks**:
