@@ -81,7 +81,7 @@ function createReloadable (app, require) {
         onReload(req, res, next)
       })
 
-      console.log(`[@artsy/express-reloadable] Mounting: ${watchPaths.join(', ')}`)
+      console.log(`\n[@artsy/express-reloadable] Mounting: ${watchPaths.join(', ')}`)
       return onReload
 
       // Node env not 'development', exit
