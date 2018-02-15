@@ -1,3 +1,4 @@
+const chalk = require('chalk')
 const path = require('path')
 const { NODE_ENV } = process.env
 const isDevelopment = !NODE_ENV || NODE_ENV === 'development'
@@ -33,7 +34,7 @@ function createReloadable (app, require) {
         const watcher = require('chokidar').watch(folder)
 
         watcher.on('ready', () => {
-          watcher.on('change', file => console.log(`[@artsy/express-reloadable] File ${file} has changed.`))
+          watcher.on('change', file => console.log(`[@artsy/express-reloadable] File ${chalk.grey(file)} has changed.`))
 
           watcher.on('all', () => {
             Object.keys(require.cache).forEach(id => {
@@ -81,7 +82,7 @@ function createReloadable (app, require) {
         onReload(req, res, next)
       })
 
-      console.log(`\n[@artsy/express-reloadable] Mounting: ${watchPaths.join(', ')}`)
+      console.log(`\n\n[@artsy/express-reloadable] Mounting: \n${chalk.grey(watchPaths.join('\n'))}\n`)
       return onReload
 
       // Node env not 'development', exit
