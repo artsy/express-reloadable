@@ -48,6 +48,10 @@ if (isDevelopment) {
       '@artsy/reaction',
       '@artsy/artsy-xapp'
     ]
+
+    // Set this value to true in order to clear the cache for a module and along
+    // with its tree of dependencies.
+    recursive: false
   }))
 
   // If prod, mount apps like normal

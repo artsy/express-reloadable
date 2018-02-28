@@ -14,9 +14,17 @@
     "Christopher Pappas <damassi.pappas@gmail.com>",
     "Eloy Durán <eloy.de.enige@gmail.com>"
   ],
+  "scripts": {
+    "test": "./node_modules/tape/bin/tape ./test/*.js"
+  },
   "homepage": "https://github.com/artsy/express-reloadable",
   "license": "MIT",
   "dependencies": {
-    "chokidar": "^1.7.0"
+    "chokidar": "^1.7.0",
+    "decache": "^4.4.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "tape": "^4.9.0"
   }
 }
