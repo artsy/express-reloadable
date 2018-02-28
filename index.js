@@ -2,13 +2,15 @@ const chalk = require('chalk')
 const path = require('path')
 const { NODE_ENV } = process.env
 const isDevelopment = !NODE_ENV || NODE_ENV === 'development'
+const decache = require('decache')
 
 function createReloadable (app, require) {
   return (folderPath, options = {}) => {
     if (isDevelopment) {
       const {
         watchModules = [],
-        mountPoint = '/'
+        mountPoint = '/',
+        recursive = false
       } = options
 
       // On new request re-require app files
@@ -38,11 +40,12 @@ function createReloadable (app, require) {
 
           watcher.on('all', () => {
             Object.keys(require.cache).forEach(id => {
-              if (id.startsWith(rootPath)) {
-                delete require.cache[id]
-              }
-              if (id.startsWith(folder)) {
-                delete require.cache[id]
+              if (id.startsWith(rootPath) || id.startsWith(folder)) {
+                if (recursive) {
+                  decache(id)
+                } else {
+                  delete require.cache[id]
+                }
               }
             })
           })
@@ -74,7 +77,7 @@ function createReloadable (app, require) {
           currentResponse = null
           currentNext = null
         } else {
-          process.abort()
+          throw error
         }
       })
 
