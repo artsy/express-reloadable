@@ -1,6 +1,6 @@
 {
   "name": "@artsy/express-reloadable",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Development tool that enables hot-swapping Express server code without a restart",
   "keywords": [
     "express",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/artsy/express-reloadable",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.3.1",
     "chokidar": "^1.7.0",
     "decache": "^4.4.0"
   },
