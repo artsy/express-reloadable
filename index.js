@@ -77,7 +77,7 @@ function createReloadable (app, require) {
           currentResponse = null
           currentNext = null
         } else {
-          throw error
+          console.log(error)
         }
       })
 
