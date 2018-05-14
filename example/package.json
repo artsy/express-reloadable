@@ -8,12 +8,13 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "glob": "^7.1.2"
   },
   "scripts": {
     "start": "NODE_ENV=development node index.js"
   },
   "devDependencies": {
-    "@artsy/express-reloadable": "^1.1.2"
+    "@artsy/express-reloadable": "^1.4.0"
   }
 }
