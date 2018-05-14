@@ -1,7 +1,8 @@
 const express = require('express')
 const app = module.exports = express()
+const { otherUsers } = require('../components/users')
 
-app.get('/users', (req, res, next) => {
+app.get('/users', (req, res) => {
   res.json([
     {
       name: 'Katherine'
@@ -11,7 +12,8 @@ app.get('/users', (req, res, next) => {
     },
     {
       name: 'Moira'
-    }
+    },
+    ...otherUsers()
   ])
 })
 

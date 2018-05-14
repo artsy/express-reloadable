@@ -28,3 +28,10 @@ test('checks if throws except if NODE_ENV is set to production', (t) => {
   t.pass('No error thrown')
   t.end()
 })
+
+test('---', (t) => {
+  t.end()
+  process.exit(0)
+})
+
+
