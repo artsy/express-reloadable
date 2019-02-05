@@ -49,8 +49,9 @@ if (isDevelopment) {
       '@artsy/artsy-xapp'
     ]
 
-    // Defaults to `false`. If set to `true` not only the module itself but its tree of dependencies will be removed from the node require cache.
-    // When set to `false`, only the module itself would be removed from the cache.
+    // Defaults to `false`; only the module will be removed from the cache. If set 
+    // to `true` the module and its tree of dependencies will be removed from the 
+    // node require cache.
     recursive: false
   }))
 
