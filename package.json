@@ -25,7 +25,12 @@
     "decache": "^4.4.0"
   },
   "devDependencies": {
+    "@artsy/auto-config": "^0.1.0",
     "express": "^4.16.2",
     "tape": "^4.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }

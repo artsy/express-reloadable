@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@artsy/auto-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@artsy/auto-config/-/auto-config-0.1.0.tgz#bc76c6b112b5063ec5a79bb4d146481db9b48f45"
+  integrity sha512-bcny+cFUwPwQGY/GGkphm+DjT1gaSotEHRl452UwRHsBM0zmmP86IO9v7GBG/wgaeQoXhTwNJpPZ5IUNyXsDqg==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
