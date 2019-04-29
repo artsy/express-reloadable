@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@artsy/auto-config@^0.1.0":
+"@artsy/auto-config@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@artsy/auto-config/-/auto-config-0.1.0.tgz#bc76c6b112b5063ec5a79bb4d146481db9b48f45"
   integrity sha512-bcny+cFUwPwQGY/GGkphm+DjT1gaSotEHRl452UwRHsBM0zmmP86IO9v7GBG/wgaeQoXhTwNJpPZ5IUNyXsDqg==
@@ -365,9 +365,10 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-express@^4.16.2:
+express@4.16.2:
   version "4.16.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.2.tgz#e35c6dfe2d64b7dca0a5cd4f21781be3299e076c"
+  integrity sha1-41xt/i1kt9ygpc1PIXgb4ymeB2w=
   dependencies:
     accepts "~1.3.4"
     array-flatten "1.1.1"
@@ -1238,9 +1239,10 @@ supports-color@^5.2.0:
   dependencies:
     has-flag "^3.0.0"
 
-tape@^4.9.0:
+tape@4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/tape/-/tape-4.9.0.tgz#855c08360395133709d34d3fbf9ef341eb73ca6a"
+  integrity sha512-j0jO9BiScfqtPBb9QmPLL0qvxXMz98xjkMb7x8lKipFlJZwNJkqkWPou+NU4V6T9RnVh1kuSthLE8gLrN8bBfw==
   dependencies:
     deep-equal "~1.0.1"
     defined "~1.0.0"
