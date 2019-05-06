@@ -43,12 +43,8 @@ if (isDevelopment) {
 
     // Or if you're using `yarn link` (or npm) to symlink external dependencies
     // during dev, pass in an array of modules to watch. Changes made internally
-    // will be instantly available in the app. 
-    
-    // Additionally, using something like `glob`, other modules outside of express 
-    // route path can be watched.
-    // See: https://github.com/aredotna/ervell/blob/master/src/lib/setup.coffee#L164-L169
-    // for an example.
+    // will be instantly available in the app. Additionally, using something like 
+    // `glob`, other modules outside of express route path can be passed.
     watchModules: [
       '@artsy/reaction',
       '@artsy/artsy-xapp'
