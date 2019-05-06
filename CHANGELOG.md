@@ -1,3 +1,20 @@
+# v1.4.4 (Mon May 06 2019)
+
+#### 🏠  Internal
+
+- Update dep @artsy/express-reloadable from 1.4.2 to v1.4.3 [#24](https://github.com/artsy/express-reloadable/pull/24) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### ⚠️  Pushed to master
+
+- Update README with additionalModules globbing  ([@damassi.pappas@gmail.com](https://github.com/damassi.pappas@gmail.com))
+
+#### Authors: 2
+
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+- [@damassi.pappas@gmail.com](https://github.com/damassi.pappas@gmail.com)
+
+---
+
 # v1.4.3 (Mon May 06 2019)
 
 #### 🏠  Internal
