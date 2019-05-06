@@ -1,3 +1,15 @@
+# v1.4.6 (Mon May 06 2019)
+
+#### ⚠️  Pushed to master
+
+- Update README.md  ([@damassi.pappas@gmail.com](https://github.com/damassi.pappas@gmail.com))
+
+#### Authors: 1
+
+- [@damassi.pappas@gmail.com](https://github.com/damassi.pappas@gmail.com)
+
+---
+
 # v1.4.5 (Mon May 06 2019)
 
 #### 🐛  Bug Fix
