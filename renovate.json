@@ -3,5 +3,8 @@
   "assignees": [
     "zephraph",
     "damassi"
-  ] 
+  ],
+  "ignorePaths": [
+    "example"
+  ]
 }
