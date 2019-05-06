@@ -1,3 +1,15 @@
+# v1.4.5 (Mon May 06 2019)
+
+#### 🐛  Bug Fix
+
+- [Renovate] Ignore example folder [#26](https://github.com/artsy/express-reloadable/pull/26) ([@damassi](https://github.com/damassi))
+
+#### Authors: 1
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+
+---
+
 # v1.4.4 (Mon May 06 2019)
 
 #### 🏠  Internal
