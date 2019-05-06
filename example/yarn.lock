@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@artsy/express-reloadable@1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@artsy/express-reloadable/-/express-reloadable-1.4.2.tgz#0f851941c72b444467d9b02c95233a777aedeb74"
-  integrity sha512-W4enNndrgxEsRMUrbmUuN1lnuN2dN552G1jenRftq7JmItqagEZH5+p9SVGgZ0lkH/Gibuqw8Gj99q5fQiGCIQ==
+"@artsy/express-reloadable@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@artsy/express-reloadable/-/express-reloadable-1.4.3.tgz#dcc5f15d6370209e538104d6db74dd3756b6a151"
+  integrity sha512-J+otTWHUayPwiB1YW/OXe8vBSvkzdkmAo3kOcmKDN9/Mk370mTtGyk1/AJ5Qj+2jIStr9SnzZveBUPHAbE7qbg==
   dependencies:
     chalk "^2.3.1"
     chokidar "^3.0.0"
