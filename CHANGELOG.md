@@ -1,3 +1,22 @@
+# v1.4.7 (Tue Sep 03 2019)
+
+#### 🐛  Bug Fix
+
+- Fix symlinks not being watched due to chokidar bug [#30](https://github.com/artsy/express-reloadable/pull/30) ([@zephraph](https://github.com/zephraph))
+
+#### 🏠  Internal
+
+- Update dep @artsy/auto-config from 1.0.0 to v1.0.1 [#29](https://github.com/artsy/express-reloadable/pull/29) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v2 [#28](https://github.com/artsy/express-reloadable/pull/28) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v1.1.1 [#27](https://github.com/artsy/express-reloadable/pull/27) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Justin Bennett ([@zephraph](https://github.com/zephraph))
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.6 (Mon May 06 2019)
 
 #### ⚠️  Pushed to master
