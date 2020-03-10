@@ -1,3 +1,16 @@
+# v1.4.8 (Tue Mar 10 2020)
+
+#### 🐛  Bug Fix
+
+- Update dep @artsy/auto-config from 1.0.1 to v1.0.2 [#32](https://github.com/artsy/express-reloadable/pull/32) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v2.1.1 [#31](https://github.com/artsy/express-reloadable/pull/31) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.7 (Tue Sep 03 2019)
 
 #### 🐛  Bug Fix
