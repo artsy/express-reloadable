@@ -1,7 +1,6 @@
 {
   "extends": ["@artsy:lib"],
   "assignees": [
-    "zephraph",
     "damassi"
   ],
   "ignorePaths": [
