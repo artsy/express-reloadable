@@ -1,3 +1,37 @@
+# v1.5.0 (Sun Aug 29 2021)
+
+#### 🚀  Enhancement
+
+- Remove meeee [#42](https://github.com/artsy/express-reloadable/pull/42) ([@zephraph](https://github.com/zephraph))
+
+#### 🐛  Bug Fix
+
+- bugfix: Dont consume errors in reload cycle [#45](https://github.com/artsy/express-reloadable/pull/45) ([@damassi](https://github.com/damassi))
+
+#### ⚠️  Pushed to `master`
+
+- Update README.md ([@damassi](https://github.com/damassi))
+
+#### 🏠  Internal
+
+- Update yarn orb from 5.1.1 to v5.1.3 [#40](https://github.com/artsy/express-reloadable/pull/40) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb from 1.2.1 to v1.3.2 [#39](https://github.com/artsy/express-reloadable/pull/39) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 5.1.0 to v5.1.1 [#38](https://github.com/artsy/express-reloadable/pull/38) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 5.0.0 to v5.1.0 [#37](https://github.com/artsy/express-reloadable/pull/37) ([@renovate-bot](https://github.com/renovate-bot))
+- Update auto orb from 1.2.0 to v1.2.1 [#35](https://github.com/artsy/express-reloadable/pull/35) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb from 4.0.2 to v5 [#36](https://github.com/artsy/express-reloadable/pull/36) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update auto orb from 1.1.0 to v1.2.0 [#34](https://github.com/artsy/express-reloadable/pull/34) ([@renovate-bot](https://github.com/renovate-bot))
+- Update yarn orb to v4 [#33](https://github.com/artsy/express-reloadable/pull/33) ([@renovate-bot](https://github.com/renovate-bot) [@zephraph](https://github.com/zephraph) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 4
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- Justin Bennett ([@zephraph](https://github.com/zephraph))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.8 (Tue Mar 10 2020)
 
 #### 🐛  Bug Fix
