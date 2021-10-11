@@ -1,3 +1,24 @@
+# v1.6.0 (Mon Oct 11 2021)
+
+#### 🚀  Enhancement
+
+- Bump path-parse from 1.0.6 to 1.0.7 [#48](https://github.com/artsy/express-reloadable/pull/48) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### 🏠  Internal
+
+- Bump minimist from 1.2.0 to 1.2.5 [#49](https://github.com/artsy/express-reloadable/pull/49) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump glob-parent from 5.0.0 to 5.1.2 [#50](https://github.com/artsy/express-reloadable/pull/50) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- chore(deps): update dep @artsy/auto-config from 1.0.2 to v1.1.0 [#46](https://github.com/artsy/express-reloadable/pull/46) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update auto orb from 1.4.0 to v2 [#47](https://github.com/artsy/express-reloadable/pull/47) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.5.0 (Sun Aug 29 2021)
 
 #### 🚀  Enhancement
