@@ -25,7 +25,7 @@
     "decache": "^4.4.0"
   },
   "devDependencies": {
-    "@artsy/auto-config": "1.0.2",
+    "@artsy/auto-config": "1.1.0",
     "express": "4.16.4",
     "tape": "4.10.1"
   },
