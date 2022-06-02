@@ -1,3 +1,22 @@
+# v1.7.0 (Thu Jun 02 2022)
+
+#### 🚀  Enhancement
+
+- fix(setup): import lib at top [#59](https://github.com/artsy/express-reloadable/pull/59) ([@damassi](https://github.com/damassi))
+
+#### 🏠  Internal
+
+- chore(deps): update yarn orb from 6.1.0 to v6.2.0 [#58](https://github.com/artsy/express-reloadable/pull/58) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update auto orb from 2.0.0 to v2.1.0 [#57](https://github.com/artsy/express-reloadable/pull/57) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update yarn orb from 6.0.0 to v6.1.0 [#54](https://github.com/artsy/express-reloadable/pull/54) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Christopher Pappas ([@damassi](https://github.com/damassi))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.6.0 (Mon Oct 11 2021)
 
 #### 🚀  Enhancement
