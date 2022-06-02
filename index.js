@@ -3,6 +3,7 @@ const path = require('path')
 const { NODE_ENV } = process.env
 const isDevelopment = !NODE_ENV || NODE_ENV === 'development'
 const decache = require('decache')
+const { watch } = require('chokidar')
 
 function createReloadable (app, require) {
   return (folderPath, options = {}) => {
@@ -39,7 +40,7 @@ function createReloadable (app, require) {
 
     // Watch a subset of files for changes
     watchPaths.forEach(folder => {
-      const watcher = require('chokidar').watch(folder)
+      const watcher = watch(folder)
 
       watcher.on('ready', () => {
         watcher.on('change', file => console.log(`[@artsy/express-reloadable] File ${chalk.grey(file)} has changed.`))
