@@ -1,3 +1,24 @@
+# v1.8.0 (Wed Nov 19 2025)
+
+#### 🚀  Enhancement
+
+- feat: add yarn check github action [#72](https://github.com/artsy/express-reloadable/pull/72) ([@mc-jones](https://github.com/mc-jones))
+
+#### 🏠  Internal
+
+- chore(deps): update auto orb from 2.1.0 to v2.2.0 [#68](https://github.com/artsy/express-reloadable/pull/68) ([@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update yarn orb from 6.4.0 to v6.5.0 [#67](https://github.com/artsy/express-reloadable/pull/67) ([@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update yarn orb from 6.2.0 to v6.4.0 [#61](https://github.com/artsy/express-reloadable/pull/61) ([@renovate[bot]](https://github.com/renovate[bot]))
+- Bump express from 4.16.4 to 4.17.3 [#63](https://github.com/artsy/express-reloadable/pull/63) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v1.7.0 (Thu Jun 02 2022)
 
 #### 🚀  Enhancement
