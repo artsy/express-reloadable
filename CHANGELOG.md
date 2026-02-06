@@ -1,3 +1,20 @@
+# v1.8.1 (Fri Feb 06 2026)
+
+#### 🐛  Bug Fix
+
+- feat: add triggers to conventional commits check [#73](https://github.com/artsy/express-reloadable/pull/73) ([@mc-jones](https://github.com/mc-jones))
+
+#### 🏠  Internal
+
+- chore(deps): update dep auto from 2.2.0 to v2.3.0 [#69](https://github.com/artsy/express-reloadable/pull/69) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Matt Jones ([@mc-jones](https://github.com/mc-jones))
+
+---
+
 # v1.8.0 (Wed Nov 19 2025)
 
 #### 🚀  Enhancement
